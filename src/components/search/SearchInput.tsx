@@ -6,13 +6,13 @@ import { margin, padding } from "@styles/spacing";
 import { theme } from "@styles/themes";
 
 // Context
-import { ResultsContext } from "@components/main/context";
+import { ResultsContext } from "@store/context";
 
 // API
 import { searchWord } from "@api/index";
 
-export default function SearchBar() {
-  const [word, setWord] = useState<string>("cat");
+export default function SearchInput() {
+  const [word, setWord] = useState<string>("");
   const { setResults, setQuery } = useContext(ResultsContext);
 
   const handleSearch = async () => {

@@ -1,7 +1,7 @@
 import { FlatList } from "react-native";
 import React, { useContext } from "react";
 //Context
-import { ResultsContext } from "../main/context";
+import { ResultsContext } from "../../store/context";
 //core
 import Card from "../_core/card";
 import FadeInView from "../_core/fadeIn";

@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   main: {
     height: 200,
     flex: 1,
-    backgroundColor: theme.primary.background,
+    backgroundColor: theme.secondary.background,
     borderRadius: 8,
     padding: padding.M,
     margin: margin.S,

@@ -2,7 +2,7 @@ import { View, StyleSheet } from "react-native";
 import React from "react";
 
 // Context
-import { ContextProvider } from "@components/main/context";
+import { ContextProvider } from "@store/context";
 
 // Components
 import Card from "@components/_core/card";
