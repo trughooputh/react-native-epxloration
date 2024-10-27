@@ -1,11 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { colors } from "../../../styles/themes";
-import { fontsSize, margin, padding } from "../../../styles/helpers";
+import { colors } from "@styles/themes";
+import { fontsSize, margin, padding } from "@styles/helpers";
 
+// Core components can be seen as reusable components that are used across multiple screens.
 export default function Card({ title, description }) {
   return (
-    <View style={styles.card}>
+    <View style={styles.main}>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.description}>{description}</Text>
     </View>
@@ -13,7 +14,9 @@ export default function Card({ title, description }) {
 }
 
 const styles = StyleSheet.create({
-  card: {
+  main: {
+    height: 200,
+    flex: 1,
     backgroundColor: colors.card.background,
     borderRadius: 8,
     padding: padding.M,
@@ -29,6 +32,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: fontsSize.L,
+    color: colors.fonts.primary,
     fontWeight: "bold",
     marginBottom: margin.XS,
   },

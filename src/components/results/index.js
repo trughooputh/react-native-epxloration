@@ -3,16 +3,19 @@ import React, { useContext } from "react";
 //Context
 import { ResultsContext } from "../main/context";
 //core
-import Card from "../core/card";
+import Card from "../_core/card";
+import FadeInView from "../_core/fadeIn";
+
 export default function Results() {
   const { searchedWord, results } = useContext(ResultsContext);
   return (
     <>
-      {/* Decide how you want display the results using the card*/}
       <FlatList
         data={results.definitions}
         renderItem={({ item }) => (
-          <Card title={searchedWord} description={item.definition} />
+          <FadeInView>
+            <Card title={searchedWord} description={item.definition} />
+          </FadeInView>
         )}
         keyExtractor={(item) => `item-${item.definition}}`}
         horizontal
