@@ -1,36 +1,49 @@
-# React Native Dictionary App 📖
+# React Native Masterclass hands on 📖
 
-This project is meant to be a starter guide to learning React Native** while also practicing working with external APIs
+Welcome to the React Native Masterclass Hands-On project! 
+
+This project serves as a hands-on introduction to React Native, providing you with a practical learning experience as you develop a mobile application. Designed for those who already have a foundation in React and JavaScript, this project covers the basics of React Native development, from setup to API integration, allowing you to quickly adapt your web development skills to mobile.
 
 ## Who is this for?
+This project is ideal for:
 
-This project is designed for recent graduates or students who are already familiar with **React** and comfortable working with JavaScript.
+Recent graduates or students who are experienced with React and JavaScript
 
-You will also notice this project uses Axios, if you are not familiar with it you can easily replace the logic with a normal fetch.
+Developers eager to transition from web to mobile development
 
-## Some theory before start 
+Anyone interested in a step-by-step approach to understanding the key elements of React Native
+
+## What is React Native?
 
 [React Native](https://reactnative.dev/docs/getting-started) is an open-source framework developed by Facebook/Meta for building cross-platform mobile applications. It allows developers to write code in JavaScript and create native-like apps for iOS and Android platforms. 
 
 When creating a React or Vanilla JS project, you can see the product of your code in the browser, in this case, things are different - as React Native develops a mobile app, usually you will need to setup Android Studio or Xcode tools to run the code in a iPhone or android emulators.
 
-However fear not, this project uses [React Native Expo](https://reactnative.dev/docs/environment-setup), so you will be able to run your code on your own mobile phone as we will explain in the following section.
+You will see that React Native components import React and uses hooks in the same way in a web-app, but instead of DOM elements like `h1` and `div`, React Native provides a set of in-built components, like `Text` and `View`.
 
-You will see that React Native components import React and uses hooks in the same way in a web-app, but instead of h1 and div you have a set of in-built components, like Tetx and View.
+## Expo and Setup
 
-Look at the before-linked documentation to know more about how to use them.
+With [Expo](https://expo.dev/), you can skip the need for Android Studio or Xcode and instead run your code directly on your own mobile phone.
+Simply install the Expo Go app, scan the QR code, and see your project live on your device! We’ll guide you through the steps in the next section to ensure a smooth setup and a quick path to seeing your code in action.
+
+*Download the Expo Go app* on your own mobile device to scan it and so see your app alive!
+
 
 ## Getting started
 
-Once you cloned the repository on your own machine
+Clone the repository
 
-`cd react-native-dictionary-app`
+`git clone https://github.com/trughooputh/react-native-exploration.git`
 
-Run in the terminal
+Go to the folder
+
+`cd react-native-exploration`
+
+Run the app with Expo
 
 `yarn expo start`
 
-You will see a QR code, download the Expo Go app on your own mobile device to scan it and so see your dictionary app!
+You will see a QR code. With your phone scan it, and you will see your app on a real device
 
 ## Functionality and structure overview
 
@@ -61,6 +74,7 @@ Once you are familiar with the existing code and with the dictionary API
 
 * To find [color inspiration](https://colorhunt.co/)
 * [React Native components](https://reactnative.dev/docs/components-and-apis)
+* [Expo](https://expo.dev/)
 
 ---
 
