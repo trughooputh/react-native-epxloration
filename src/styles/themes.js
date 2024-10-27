@@ -1,16 +1,30 @@
-//Modify or add more colors for your app components here!
-export const colors = {
-  main: {
-    primary: "#FBF9F1",
-    secondary: "#E5E1DA",
+// Define your app colors theme here
+
+const black = "#000000";
+const white = "#ffffff";
+const grey = "#808080";
+
+const mainColor = "#D5001C";
+
+export const theme = {
+  primary: {
+    background: mainColor,
+    text: white,
+    borderColor: mainColor,
+  },
+  secondary: {
+    background: white,
+    text: mainColor,
+    borderColor: black,
+  },
+  terciary: {
+    background: grey,
+    text: black,
+    borderColor: grey,
   },
   card: {
-    border: "#AAD7D9",
-    background: "#92C7CF",
-    shadow: "#000",
-  },
-  fonts: {
-    primary: "#000000",
-    secondary: "#80BCBD",
+    border: mainColor,
+    background: white,
+    shadow: black,
   },
 };
