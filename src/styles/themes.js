@@ -8,8 +8,8 @@ const mainColor = "#D5001C";
 
 export const theme = {
   primary: {
-    background: mainColor,
-    text: white,
+    background: white,
+    text: black,
     borderColor: mainColor,
   },
   secondary: {
@@ -27,4 +27,10 @@ export const theme = {
     background: white,
     shadow: black,
   },
+};
+
+export const borderRadius = {
+  S: 10,
+  M: 20,
+  L: 30,
 };

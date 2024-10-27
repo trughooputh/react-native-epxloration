@@ -3,7 +3,7 @@ import { View, TextInput, StyleSheet } from "react-native";
 
 // Styles
 import { margin, padding } from "@styles/spacing";
-import { theme } from "@styles/themes";
+import { theme, borderRadius } from "@styles/themes";
 
 // Context
 import { ResultsContext } from "@store/context";
@@ -43,6 +43,7 @@ export default function SearchInput() {
 const styles = StyleSheet.create({
   searchBar: {
     height: 50,
+    borderRadius: borderRadius.L,
     borderColor: theme.primary.borderColor,
     backgroundColor: theme.primary.background,
     borderWidth: 1,

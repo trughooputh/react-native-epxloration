@@ -5,23 +5,21 @@ import { Text, View, Platform, StyleSheet } from 'react-native';
 import { theme } from '@styles/themes';
 import { fontsSize } from '@styles/fonts';
 
-export default function PlatformDisplay() {
+export default function PlatformInformation() {
   const platformText = Platform.OS === 'ios' ? 'iOS' : 'Android';
 
   return (
     <View style={styles.main}>
-      <Text style={{ fontSize: 18 }}>You're using {platformText}!</Text>
+      <Text style={styles.text}>You're using {platformText}!</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   main: {
-    backgroundColor: theme.primary.text,
-    padding: 20,
-    alignItems: 'center'
+    backgroundColor: theme.primary.background,
   },
   text: {
-    fontSize: fontsSize.L,
+    fontSize: fontsSize.XS,
   }
 });

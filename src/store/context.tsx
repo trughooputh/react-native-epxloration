@@ -1,3 +1,5 @@
+// Ideally, use a more solid state management library like Redux, Recoil or Zustand
+
 import React, {
   useState,
   createContext,
@@ -21,9 +23,9 @@ type ResultsContextType = {
 
 export const ResultsContext = createContext<ResultsContextType>({
   query: "",
-  setQuery: () => {},
+  setQuery: () => { },
   results: [],
-  setResults: () => {},
+  setResults: () => { },
 });
 
 export const ContextProvider = ({ children }: PropsWithChildren) => {

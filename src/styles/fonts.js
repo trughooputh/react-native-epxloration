@@ -1,8 +1,8 @@
 export const fontsSize = {
-  XS: 5,
-  S: 10,
-  M: 15,
-  L: 20,
+  XS: 15,
+  S: 20,
+  M: 25,
+  L: 30,
   XL: 40,
 };
 
