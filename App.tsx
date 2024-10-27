@@ -6,7 +6,7 @@ import Header from '@components/_core/header';
 import Main from '@components/main';
 
 // Styles
-import { colors } from '@styles/themes';
+import { theme } from '@styles/themes';
 import { margin } from '@styles/spacing';
 import { fontsSize } from '@styles/fonts';
 
@@ -24,12 +24,12 @@ export default function App() {
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: colors.main.primary
+    backgroundColor: theme.primary.background,
   },
   title: {
     fontSize: fontsSize.L,
     margin: margin.M,
-    color: colors.fonts.secondary
+    color: theme.primary.text,
   }
 })
 
