@@ -12,6 +12,7 @@ module.exports = function(api) {
           root: ["./"],
           alias: {
             "@components": "./src/components",
+            "@store": "./src/store",
             "@utils": "./src/utils",
             "@styles": "./src/styles",
             "@assets": "./src/assets",

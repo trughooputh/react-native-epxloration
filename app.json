@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-dictionary",
-    "slug": "react-native-dictionary",
+    "name": "react-native-exploration",
+    "slug": "react-native-exploration",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
