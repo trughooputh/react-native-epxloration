@@ -10,6 +10,8 @@ import { ResultsContext } from "@store/context";
 
 // API
 import { searchWord } from "@api/index";
+import { fontsSize } from "@styles/fonts";
+import { screenWidth } from "@utils/device";
 
 export default function SearchInput() {
   const [word, setWord] = useState<string>("");
@@ -43,11 +45,13 @@ export default function SearchInput() {
 const styles = StyleSheet.create({
   searchBar: {
     height: 50,
-    borderRadius: borderRadius.L,
+    borderRadius: borderRadius.S,
     borderColor: theme.primary.borderColor,
     backgroundColor: theme.primary.background,
     borderWidth: 1,
     margin: margin.M,
     padding: padding.S,
+    fontSize: fontsSize.S,
+    width: screenWidth - 40,
   },
 });

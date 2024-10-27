@@ -15,18 +15,17 @@ type Props = {
 export function CarCard({ name, url }: Props) {
   return (
     <View style={styles.main}>
-      <Text style={styles.text}>{name}</Text>
       <Image style={styles.image} source={{ uri: url }} />
+      <Text style={styles.text}>{name}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   main: {
-    borderWidth: 1,
     width: screenWidth,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    marginBottom: margin.M,
+    marginBottom: margin.XL,
     height: 200,
   },
   image: {

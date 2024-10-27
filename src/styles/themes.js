@@ -10,7 +10,7 @@ export const theme = {
   primary: {
     background: white,
     text: black,
-    borderColor: mainColor,
+    borderColor: black,
   },
   secondary: {
     background: white,
