@@ -4,6 +4,8 @@ Welcome to the React Native Masterclass Hands-On project!
 
 This project serves as a hands-on introduction to React Native, providing you with a practical learning experience as you develop a mobile application. Designed for those who already have a foundation in React and JavaScript, this project covers the basics of React Native development, from setup to API integration, allowing you to quickly adapt your web development skills to mobile.
 
+![Porsche Digital x React Native](assets/porsche%20digital%20x%20react%20native.png)
+
 ## Who is this for?
 This project is ideal for:
 
@@ -75,6 +77,7 @@ Once you are familiar with the existing code and with the dictionary API
 * To find [color inspiration](https://colorhunt.co/)
 * [React Native components](https://reactnative.dev/docs/components-and-apis)
 * [Expo](https://expo.dev/)
+* [React Native in 100 sec](https://www.youtube.com/watch?v=gvkqT_Uoahw)
 
 ---
 
