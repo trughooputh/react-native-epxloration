@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { View, TextInput, StyleSheet } from "react-native";
+import { View, TextInput, StyleSheet, Vibration } from "react-native";
 
 // Styles
 import { margin, padding } from "@styles/spacing";

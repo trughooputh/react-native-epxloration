@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FlatList, StyleSheet } from "react-native";
 
-// Mock
-import cars from "../../../mock/data";
+// Context
+import { ResultsContext } from "@store/context";
 
 // Components
 import { CarCard } from "@components/car/card";
 
 export default function CarList() {
+
+  const { filteredResults } = useContext(ResultsContext);
+
   return (
-    <FlatList data={cars} renderItem={({ item }) => <CarCard url={item.url} name={item.name} />} keyExtractor={(item) => item.name} />
+    <FlatList
+      showsVerticalScrollIndicator={false}
+      data={filteredResults}
+      renderItem={({ item }) => <CarCard car={item} />}
+      keyExtractor={(item) => item.name}
+    />
   );
 }
 

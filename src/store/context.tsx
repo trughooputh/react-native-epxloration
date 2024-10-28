@@ -7,11 +7,17 @@ import React, {
   Dispatch,
   SetStateAction,
   useContext,
+  useMemo,
 } from "react";
+import cars from "../mock/data";
 
-type Car = {
+export type Car = {
   name: string;
   url: string;
+  year: number;
+  description: string;
+  type: string;
+  color: string;
 };
 
 type ResultsContextType = {
@@ -19,6 +25,7 @@ type ResultsContextType = {
   setQuery: Dispatch<SetStateAction<string>>;
   results: Car[];
   setResults: Dispatch<SetStateAction<Car[]>>;
+  filteredResults: Car[]
 };
 
 export const ResultsContext = createContext<ResultsContextType>({
@@ -26,14 +33,22 @@ export const ResultsContext = createContext<ResultsContextType>({
   setQuery: () => { },
   results: [],
   setResults: () => { },
+  filteredResults: []
 });
 
 export const ContextProvider = ({ children }: PropsWithChildren) => {
-  const [results, setResults] = useState<Car[]>([]);
+  const [results, setResults] = useState<Car[]>(cars);
   const [query, setQuery] = useState("");
 
+  // Memoize the filtered results based on the query and results
+  const filteredResults = useMemo(() => {
+    return cars.filter((car) =>
+      car.name.toLowerCase().includes(query.toLowerCase())
+    );
+  }, [query, results]);
+
   return (
-    <ResultsContext.Provider value={{ results, setResults, query, setQuery }}>
+    <ResultsContext.Provider value={{ results, setResults, query, setQuery, filteredResults }}>
       {children}
     </ResultsContext.Provider>
   );
