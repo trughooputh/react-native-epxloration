@@ -45,6 +45,10 @@ Run the app with Expo
 
 `yarn expo start`
 
+Ensure to have expo-cli
+
+`yarn global add expo-cli@latest`
+
 You will see a QR code. With your phone scan it, and you will see your app on a real device
 
 ## Functionality and structure overview

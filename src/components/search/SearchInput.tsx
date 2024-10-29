@@ -1,35 +1,28 @@
 import React, { useState, useEffect, useContext } from "react";
-import { View, TextInput, StyleSheet, Vibration } from "react-native";
+import { View, TextInput, StyleSheet } from "react-native";
 
 // Styles
 import { margin, padding } from "@styles/spacing";
 import { theme, borderRadius } from "@styles/themes";
+import { fontsSize } from "@styles/fonts";
 
 // Context
 import { ResultsContext } from "@store/context";
 
 // API
 import { searchWord } from "@api/index";
-import { fontsSize } from "@styles/fonts";
+
+// Utils
 import { screenWidth } from "@utils/device";
 
 export default function SearchInput() {
   const [word, setWord] = useState<string>("");
-  const { setResults, setQuery } = useContext(ResultsContext);
-
-  const handleSearch = async () => {
-    const results = await searchWord(word);
-    setResults(results.meanings);
-  };
+  const { setQuery } = useContext(ResultsContext);
 
   const handleChange = (value: string) => {
     setQuery(value);
     setWord(value);
   };
-
-  useEffect(() => {
-    handleSearch();
-  }, [word]);
 
   return (
     <TextInput
@@ -37,7 +30,7 @@ export default function SearchInput() {
       placeholder="Search..."
       value={word}
       onChangeText={handleChange}
-      onEndEditing={handleSearch}
+    // onEndEditing={handleSearch}
     />
   );
 }
