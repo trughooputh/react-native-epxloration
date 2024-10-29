@@ -77,20 +77,22 @@ This project is partially started, so once you get it up and running, before sta
 
 As a summary, under src/ you will find
 
-* a component folder, containing already the basic part of the application, like a searchBar component, a core subfolder with a card component
-* a style folder, which contains a helper and themes files: like a real-life project, this dictionary uses a unified way to handle styling to ensure all part of the app looks coherents
-* an API folder, with already the connection to the [dictionary api](https://dictionaryapi.dev/)
-* A Context provider - if you never used this before, check the [React documentation](https://react.dev/learn/passing-data-deeply-with-context) about Context and useContext - it's a way to share information across components avoiding overusing props. We suggest using it as it is a good practice to avoid prop drilling! 
+* a *components* folder, containing already the basic part of the application, like a searchBar component, a *core* subfolder who contains the common UI components
+* a *style* folder, which contains a helper, themes, ...etc files: like a real-life project. Separated by modules
+* an *api* folder, to put your API request
+* A *store* folder, to manage the local state of your appliacation - if you never used this before, check the [React documentation](https://react.dev/learn/passing-data-deeply-with-context) about *Context* and *useContext* - for sharing information across components avoiding overusing props. We sontrgly recommand using it as it is a good practice to avoid prop drilling! 
   
 ## Code the next steps!
 
 Once you are familiar with the existing code:
 
 * Display the results from the get call from your favourite API
-* Improve the styling by modifying the current styling helpers and theme, and ensure all your components look the same! 
+* Improve the styling by modifying the current styling helpers and theme, and ensure all your components look the same!
 * Add error handling flow: right now we are not handling possible errors, ensure your code is ready in case a 404 arrives!
-* Add some navigation to browse different section of your app!
+* Add some navigation to browse different section of your app, buttons and bottom navigation
 * Personalise the app even more by incorporating a custom font
+* Access to the camera
+* 
 
 ## Additional Resources
 
