@@ -1,15 +1,15 @@
 # React Native Masterclass hands on 📖
 
-Welcome to the React Native Masterclass Hands-On project! 
+Welcome to the React Native exploration project! 
 
-This project serves as a hands-on introduction to React Native, providing you with a practical learning experience as you develop a mobile application. Designed for those who already have a foundation in React and JavaScript, this project covers the basics of React Native development, from setup to API integration, allowing you to quickly adapt your web development skills to mobile.
+This project serves as a hands-on introduction to React Native, providing you with a practical learning experience as you develop a mobile application. Designed for those who already have a foundation in React and JavaScript, some knowledge about TypeScript, this project covers the basics of React Native development, from setup to API integration, allowing you to quickly adapt your web development skills to mobile.
 
 ![Porsche Digital x React Native](assets/porsche%20digital%20x%20react%20native.png)
 
 ## Who is this for?
 This project is ideal for:
 
-Recent graduates or students who are experienced with React and JavaScript
+Recent graduates or students who are experienced with React and JavaScript, wants to touch a bit of TypeScript
 
 Developers eager to transition from web to mobile development
 
@@ -17,39 +17,62 @@ Anyone interested in a step-by-step approach to understanding the key elements o
 
 ## What is React Native?
 
-[React Native](https://reactnative.dev/docs/getting-started) is an open-source framework developed by Facebook/Meta for building cross-platform mobile applications. It allows developers to write code in JavaScript and create native-like apps for iOS and Android platforms. 
+[React Native](https://reactnative.dev/docs/getting-started) is an open-source framework developed by Facebook (now Meta) for building cross-platform mobile applications. It enables developers to use JavaScript to create native-like apps for both iOS and Android, all from a single codebase.
 
-When creating a React or Vanilla JS project, you can see the product of your code in the browser, in this case, things are different - as React Native develops a mobile app, usually you will need to setup Android Studio or Xcode tools to run the code in a iPhone or android emulators.
+Unlike web development with React or Vanilla JavaScript, where you can preview your work directly in the browser, React Native requires mobile-specific tools. To see your app on an iOS or Android emulator, you’ll typically need to set up Android Studio or Xcode.
 
-You will see that React Native components import React and uses hooks in the same way in a web-app, but instead of DOM elements like `h1` and `div`, React Native provides a set of in-built components, like `Text` and `View`.
+React Native shares many familiar concepts with React for the web. Components import React and use hooks similarly to web applications, but instead of traditional HTML elements like h1 or div, React Native offers a suite of mobile-specific components, such as Text and View, designed for building robust mobile interfaces.
 
 ## Expo and Setup
 
-With [Expo](https://expo.dev/), you can skip the need for Android Studio or Xcode and instead run your code directly on your own mobile phone.
-Simply install the Expo Go app, scan the QR code, and see your project live on your device! We’ll guide you through the steps in the next section to ensure a smooth setup and a quick path to seeing your code in action.
+With [Expo](https://expo.dev/), you can skip the setup of Android Studio or Xcode and run your React Native code directly on your mobile device. Simply install the Expo Go app, scan the provided QR code, and watch your project come to life on your phone! In the next section, we’ll walk you through each step to ensure a smooth setup so you can quickly see your code in action.
 
-*Download the Expo Go app* on your own mobile device to scan it and so see your app alive!
+Download the Expo Go app on your mobile device to scan the QR code and instantly view your app live!
 
 
 ## Getting started
 
-Clone the repository
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+
+Ensure you have the following installed on your development machine:
+
+- **Node.js**: Download and install the latest LTS version from [nodejs.org](https://nodejs.org/).
+- **npm** (comes with Node.js) or **Yarn**: For managing dependencies.
+- **Expo CLI**: Run `npm install -g expo-cli` or `yarn global add expo-cli` to install Expo globally.
+
+### Installation
+
+1. **Clone the repository**:
 
 `git clone https://github.com/trughooputh/react-native-exploration.git`
 
-Go to the folder
-
 `cd react-native-exploration`
 
-Run the app with Expo
+2. **install dependencies**:
 
-`yarn expo start`
+`npm install`
+# or
+`yarn install`
 
+3. **Run the app with Expo**
 Ensure to have expo-cli
 
 `yarn global add expo-cli@latest`
 
-You will see a QR code. With your phone scan it, and you will see your app on a real device
+`yarn expo start`
+
+
+### Running the App on Your Device
+
+1. **Install the Expo Go app**  
+   Download Expo Go on your iOS or Android device from the [App Store](https://apps.apple.com/app/expo-go/id982107779) or [Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent).
+
+2. **Scan the QR code**  
+   After running `expo start` in your terminal, a QR code will be generated. Open the Expo Go app on your device and scan this code to view the app live on your device.
+
 
 ## Functionality and structure overview
 
@@ -64,17 +87,13 @@ As a summary, under src/ you will find
   
 ## Code the next steps!
 
-Once you are familiar with the existing code and with the dictionary API
+Once you are familiar with the existing code:
 
-* Display the results from the get call in the way you prefer: you can choose to display besides the definitions also the phonetics, synonyms and other info about the searched word
-* Improve the styling by modifying the current styling helpers and palette, and ensure all your components look the same! 
+* Display the results from the get call from your favourite API
+* Improve the styling by modifying the current styling helpers and theme, and ensure all your components look the same! 
 * Add error handling flow: right now we are not handling possible errors, ensure your code is ready in case a 404 arrives!
-
-**Extra**
-
-* Add a [new API](https://www.pexels.com/api/documentation/)to this project to show also an image representing the searched word
+* Add some navigation to browse different section of your app!
 * Personalise the app even more by incorporating a custom font
-
 
 ## Additional Resources
 
@@ -86,13 +105,7 @@ Once you are familiar with the existing code and with the dictionary API
 ---
 
 ## Please note:
-If you want to download a project on your local machine, do not fork it but clone the repo locally, on your computer. After that, create a new repo in your own GitHub account *with exactly the same project name*, and link the local repo to the remote repo in your GitHub account (see below). Why should you clone and not fork? It will show the project as **your own project** and not a fork of someone else's project. You can use it as a project for your portfolio.
-
-You can connect a local project to a new, empty GitHub repo [as follows](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line). It is very good to know this so that you can start a project locally and afterwards link it with a remote GitHub repo.
-
-If you clone the project without forking it, you will have to change the 'remote origin' repository after cloning. Check the remote of your local project using `git remote -v`. 
-
-To link your local project to your own GitHub repo, you need to change the remote origin. Have a look at this article: https://devconnected.com/how-to-change-git-remote-origin/. With `git remote -v` you can again check if remote origin has been reset and now shows the name of your GitHub account.
+Feel free to copy and play with the code to your dedicated new repo in your own GitHub account.
 
 ---
   
