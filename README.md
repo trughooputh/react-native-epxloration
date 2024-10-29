@@ -53,9 +53,7 @@ Ensure you have the following installed on your development machine:
 
 2. **install dependencies**:
 
-`npm install`
-# or
-`yarn install`
+`npm install` or `yarn install`
 
 3. **Run the app with Expo**
 Ensure to have expo-cli
@@ -63,7 +61,6 @@ Ensure to have expo-cli
 `yarn global add expo-cli@latest`
 
 `yarn expo start`
-
 
 ### Running the App on Your Device
 
